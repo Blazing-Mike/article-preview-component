@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 13px;
+   margin: 0 5%;
+    background-color:  hsl(210, 46%, 95%);
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+    background: white;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    max-width: fit-content;
+ 
+}
+
+
+.text-container{
+    padding: 0 10px;
+    max-width: 25rem;
+}
+.img-container{
+
+}
+
+h1{
+    font-size: 1.1rem;
+}
+p{
+    font-size: 0.9rem;
+}
+img{
+    width: 100%;
+}
+
+.image{
+    max-width: 28rem;
+    border-top-left-radius:0.5rem ;
+    border-top-right-radius:0.5rem ;
+}
+.heading-medium{
+    color:  hsl(214, 17%, 51%);
+}
+.para{
+    color:  hsl(212, 23%, 69%);
+}
+
+.profile-img{
+    max-width: 3rem;
+    border-radius: 50%;
+}
+.name{
+    color:  hsl(217, 19%, 35%);
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+.date{
+    color:  hsl(212, 23%, 69%);
+    font-weight: 500;
+}
+.bio{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content:flex-start;
+    
+    
+}
+#share-btn{
+padding: 0.5rem;
+background:  hsl(210, 46%, 95%);
+border: transparent;
+border-radius: 50%;
+margin-left: 2rem;
+
+}
+#hide-btn{
+    padding: 0.5rem;
+    background:  hsl(210, 46%, 95%);
+    border: transparent;
+    border-radius: 50%;
+    position: absolute;
+    
+    }
+
+.icons{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+.social-icon{
+    max-width: 1.5rem;
+}
+.active-state{
+    background-color:  hsl(217, 19%, 35%);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content:space-evenly;
+    gap: 2rem;
+    
+}
+
+.para-share{
+    color: white;
+    letter-spacing: 2px;
+    padding-left: 5px;
+  
+}
+@media (min-width: 790px) {
+    body{
+        
+    }
+
+    .image{
+        border-top-right-radius: 0rem;
+}
+
+.active-state{
+    position: absolute;
+    width: 15rem;
+    right: 290px;
+    margin-top: 10rem;
+    border-radius: 0.5rem;
+    gap: 1rem;
+    padding: 0 0.3rem;
+    justify-content: space-evenly;
+    
+}
+#hide-btn{
+    margin-top: 6rem;
+    margin-left: -6rem;
+}
+
+}
